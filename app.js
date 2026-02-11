@@ -83,14 +83,8 @@ function show(screen){
 }
 
 function setFailMessage(){
-  const msg = [
-    "Close. One more run. You’ve got this.",
-    "Not enough points. The quiz is rude. Try again.",
-    "Almost. Quick reattempt. Same brain, better RNG.",
-    "You were near. Retry unlocked. I believe in you.",
-    "The council requests a rematch. Please proceed."
-  ];
-  quizEls.failText.textContent = msg[Math.floor(Math.random() * msg.length)];
+  const msg = "ഒന്നുടെ ട്രൈ ചെയ്യൂ... കിട്ടിയില്ലേ ഒന്നുടെ പ്രാർത്ഥിച്ചിട്ട് ചെയ്ത മതി. കിട്ടുംട്ടോ";
+  quizEls.failText.textContent = msg;
 }
 
 function resetQuiz(){
