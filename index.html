@@ -24,11 +24,48 @@
 
     <div class="small" id="targetText"></div>
 
-    <section class="reveal" id="reveal">
-      <h2 class="reveal-title">It’s Valentine’s Day.</h2>
-      <p class="reveal-text">I choose you—today, and all the days after.</p>
-      <img src="assets/us.jpg" alt="Us">
-    </section>
+   <section class="reveal" id="reveal">
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen">
+    <h2 class="reveal-title">Love Quiz: Shuttu Edition</h2>
+    <p class="reveal-text">
+      6 questions. valentines card കാണണമെങ്കിൽ, കുറഞ്ഞത് 4 എണ്ണം ശരിയാക്കുക..മനസ്സിലായോ മണ്ട?
+    </p>
+
+    <div class="quiz-meta">
+      <span class="pill" id="qProg">Q 1 / 6</span>
+      <span class="pill" id="qScore">Score: 0</span>
+    </div>
+
+    <div class="quiz-card">
+      <div class="quiz-q" id="qText"></div>
+      <div class="quiz-choices" id="qChoices"></div>
+      <div class="quiz-hint" id="qHint"></div>
+    </div>
+  </div>
+
+  <!-- FAIL SCREEN -->
+  <div id="failScreen" style="display:none;">
+    <h2 class="reveal-title">Almost. Try again.</h2>
+    <p class="reveal-text" id="failText">
+      You were close. Reattempt unlocked. (The quiz is biased in your favor.)
+    </p>
+    <button class="primaryBtn" id="retryBtn">Retry quiz</button>
+  </div>
+
+  <!-- CARD SCREEN -->
+  <div id="cardScreen" style="display:none;">
+    <h2 class="reveal-title">Happy Valentine’s Day</h2>
+    <p class="reveal-text">
+      Our first Valentine’s Day together. I choose you—today, and all the days after.
+    </p>
+    <img src="assets/us.jpg" alt="Us">
+    <div class="card-actions">
+      <button class="ghostBtn" id="replayBtn">Replay quiz</button>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <script src="app.js"></script>
